@@ -64,7 +64,7 @@ function displayModal(index) {
 // makes a card appear with imformation about an employee when that employee is clicked
 gridContainer.addEventListener('click', (e) => {
     if(e.target !== gridContainer) {
-        const card = e.target.closet('.card');
+        const card = e.target.closest('.card');
         const index = card.getAttribute('data-index');
 
         displayModal(index);
